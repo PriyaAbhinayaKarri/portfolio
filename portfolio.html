@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karri Priya Abhinaya | Portfolio</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #121212;
+      color: #ffffff;
+      scroll-behavior: smooth;
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    a { text-decoration: none; color: #ffe600; }
+
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h1 { font-size: 3rem; }
+    h2 { color: #ffe600; border-bottom: 2px solid #ffe600; display: inline-block; margin-bottom: 20px; font-size: 2rem; }
+    h3 { font-size: 1.5rem; margin-bottom: 10px; }
+
+    p, li { font-size: 1.1rem; }
+
+    .card {
+      background: #1e1e1e;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background: #000;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+    }
+
+    .top-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 10px;
+    }
+
+    .top-links a {
+      color: #121212;
+      background: #ffe600;
+      padding: 10px 16px;
+      border-radius: 5px;
+      font-weight: 500;
+      font-size: 1rem;
+    }
+
+    .top-links a:hover {
+      background: #e6c200;
+    }
+
+    /* Square Photo */
+    .profile-pic-square {
+      width: 180px;
+      height: 200px;
+      object-fit: cover;
+      border: 3px solid #ffe600;
+      margin-bottom: 15px;
+    }
+
+    /* Skill Bars */
+    .skill-bar {
+      background: #333;
+      border-radius: 25px;
+      margin-bottom: 15px;
+      height: 30px;
+      overflow: hidden;
+    }
+
+    .skill-level {
+      height: 100%;
+      background: #ffe600;
+      text-align: right;
+      padding-right: 12px;
+      line-height: 30px;
+      border-radius: 25px;
+      color: #121212;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    /* Objective Section */
+    #objective p {
+      font-size: 1.2rem;
+      font-weight: 300;
+      line-height: 1.8;
+      color: #e0e0e0;
+    }
+
+    /* View Certificate Button */
+    .view-cert {
+      background: #ffe600;
+      color: #121212;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    .view-cert:hover {
+      background: #e6c200;
+    }
+
+    /* Modal */
+    #certModal {
+      display: none;
+      position: fixed;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      background: rgba(0,0,0,0.8);
+      justify-content: center;
+      align-items: center;
+      z-index: 999;
+    }
+    #certModal img {
+      max-width: 90%;
+      max-height: 80%;
+      border-radius: 8px;
+    }
+    #certModal span {
+      position: absolute;
+      top:20px;
+      right:40px;
+      font-size: 30px;
+      color:#fff;
+      cursor: pointer;
+    }
+
+    @media (max-width: 600px) {
+      section { padding: 25px; }
+      .profile-pic-square { width: 140px; height: 140px; }
+      h1 { font-size: 2rem; }
+      h2 { font-size: 1.5rem; }
+      h3 { font-size: 1.2rem; }
+      p, li { font-size: 1rem; }
+      .skill-bar { height: 25px; }
+      .skill-level { line-height: 25px; font-size: 0.9rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header style="text-align:center; padding:50px 20px;">
+    <img src="profile.jpg" alt="Karri Priya Abhinaya" class="profile-pic-square">
+    <h1>Karri Priya Abhinaya</h1>
+    <p>Final Year ECE Student | Technology Enthusiast</p>
+    <p>📧 <a href="mailto:kpriyaabhinaya@gmail.com">kpriyaabhinaya@gmail.com</a> | 📞 9390316489</p>
+    <div class="top-links">
+      <a href="https://github.com/PriyaAbhinayaKarri" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/karripriyaabhinaya" target="_blank">LinkedIn</a>
+      <a href="#objective">Career Objective</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#internships">Internships</a>
+      <a href="#certifications">Certifications</a>
+    </div>
+  </header>
+
+  <!-- Career Objective -->
+  <section id="objective">
+    <h2>Career Objective</h2>
+    <p>
+      I am a final-year Electronics and Communication Engineering student passionate about technology and programming. I have skills in Python, HTML, CSS, JavaScript, SQL, and a solid understanding of electronics and communication concepts such as circuits, signal processing, and communication systems. I aim to apply my technical expertise to build meaningful solutions while continuously learning. I value creativity, teamwork, and effective problem-solving, and I strive to manage time efficiently to deliver quality work. I am enthusiastic about contributing to innovative projects and growing as a professional in the tech industry.
+    </p>
+  </section>
+
+  <!-- Education -->
+  <section id="education">
+    <h2>Education</h2>
+    <div class="card">
+      <h3>Bachelor of Technology in Electronics & Communication Engineering</h3>
+      <p>Dr.Lankapalli Bullayya College of Engineering, Visakhapatnam</p>
+      <p>Expected Graduation: 2026 | CGPA: 9.18</p>
+    </div>
+    <div class="card">
+      <h3>Intermediate (MPC)</h3>
+      <p>Sri Gayatri Junior College, Visakhapatnam</p>
+      <p>Year: 2022 | Percentage: 93%</p>
+    </div>
+    <div class="card">
+      <h3>SSC</h3>
+      <p>Sri Sarada Vidya Nilayam, Visakhapatnam</p>
+      <p>Year: 2020 | Percentage: 98%</p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <!-- Skills Section -->
+<section id="skills">
+  <h2>Skills</h2>
+
+  <div class="card">
+    <h3>Web Technologies</h3>
+    <p>HTML</p>
+    <div class="skill-bar"><div class="skill-level" style="width:70%">Intermediate</div></div>
+    <p>CSS</p>
+    <div class="skill-bar"><div class="skill-level" style="width:60%">Intermediate</div></div>
+    <p>JavaScript</p>
+    <div class="skill-bar"><div class="skill-level" style="width:30%">Basic</div></div>
+  </div>
+
+  <div class="card">
+    <h3>Programming Languages</h3>
+    <p>Python</p>
+    <div class="skill-bar"><div class="skill-level" style="width:60%">Intermediate</div></div>
+    <p>C Language</p>
+    <div class="skill-bar"><div class="skill-level" style="width:60%">Intermediate</div></div>
+  </div>
+
+  <div class="card">
+    <h3>Databases</h3>
+    <p>SQL</p>
+    <div class="skill-bar"><div class="skill-level" style="width:55%">Intermediate</div></div>
+  </div>
+
+  <div class="card">
+    <h3>Electronics & Communication</h3>
+    <p>Circuits, Signal Processing, Communication Systems</p>
+    <div class="skill-bar"><div class="skill-level" style="width:65%">Intermediate</div></div>
+  </div>
+
+  <div class="card">
+    <h3>Tools & Platforms</h3>
+    <p>VS Code</p>
+    <div class="skill-bar"><div class="skill-level" style="width:70%">Intermediate</div></div>
+    <p>Git</p>
+    <div class="skill-bar"><div class="skill-level" style="width:70%">Intermediate</div></div>
+    <p>GitHub</p>
+    <div class="skill-bar"><div class="skill-level" style="width:70%">Intermediate</div></div>
+  </div>
+
+  <div class="card">
+    <h3>Soft Skills</h3>
+    <ul>
+      <li>Communication</li>
+      <li>Teamwork</li>
+      <li>Creativity</li>
+      <li>Problem-solving</li>
+      <li>Time management</li>
+    </ul>
+  </div>
+</section>
+
+
+  <!-- Internships -->
+  <section id="internships">
+    <h2>Internships</h2>
+
+    <div class="card">
+      <h3>Intern - Hindustan Shipyard Limited</h3>
+      <p>Domain: Ship Navigation and Communication Equipment | Year: 2024</p>
+      <p>Responsibilities: Supported the installation, upkeep, and testing of onboard electronic systems, enhancing vessel navigation and communication capabilities.</p>
+      <button class="view-cert" onclick="openModal('hindustan_cert.jpg')">View Certificate</button>
+    </div>
+
+    <div class="card">
+      <h3>Intern - Andhra Pradesh Council of Higher Education (APSCHE)</h3>
+      <p>Domain: Full Stack Python | Year: 2024</p>
+      <p>Responsibilities: Gained foundational knowledge in HTML, CSS, JavaScript, and Python through an online internship program, focusing on web development concepts and programming fundamentals.</p>
+      <button class="view-cert" onclick="openModal('apsche_cert.jpg')">View Certificate</button>
+    </div>
+
+  </section>
+
+  <!-- Certifications -->
+<section id="certifications">
+  <h2>Certifications</h2>
+  <div class="card">
+    <ul>
+      <li>Programming, Data Structures and Algorithms Using Python - NPTEL</li>
+      <li>Python - Millennium Software Solutions</li>
+      <li>C Language - Millennium Software Solutions</li>
+      <li>Microsoft Office - Millennium Software Solutions</li>
+      <li>Introduction to Machine Learning - Infosys Springboard</li>
+      <li>Active Listening Skills for Students - Infosys Springboard</li>
+    </ul>
+  </div>
+</section>
+
+
+  <!-- Modal for Internship Certificates -->
+  <div id="certModal">
+    <span onclick="closeModal()">&times;</span>
+    <img id="certImage" src="">
+  </div>
+<!-- Extra-Curricular Activities -->
+<!-- Extra-Curricular Activities -->
+<section id="activities">
+  <h2>Extra-Curricular Activities</h2>
+  <div class="card">
+    <ul>
+      <li>Participated in <strong>NASA Hackathon 2025</strong></li>
+      <li>Participated in <strong>Smart India Hackathon – College Level (2025)</strong></li>
+    
+    </ul>
+  </div>
+</section>
+
+
+<!-- Languages Known -->
+<section id="languages">
+  <h2>Languages Known</h2>
+  <div class="card">
+    <ul>
+       <li>English (Fluent)</li>
+      <li>Telugu (Native)</li>
+    
+      <li>Hindi (Basic)</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Declaration -->
+<section id="declaration">
+  <h2>Declaration</h2>
+  <div class="card">
+    <p>
+      I hereby declare that all the information provided above is true to the best of my knowledge and belief.  
+      I take full responsibility for the accuracy of the details mentioned in this portfolio.
+    </p>
+    <p style="margin-top: 20px;">
+    <p>Place: Visakhapatnam</p>
+    <p style="margin-top: 20px;"><strong>(Karri Priya Abhinaya)</strong></p>
+  </div>
+</section>
+
+  <footer>
+    <p>© 2025 Karri Priya Abhinaya | Built with 💻 HTML, CSS & JavaScript</p>
+  </footer>
+
+  <script>
+    // Smooth scroll for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener("click", function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href")).scrollIntoView({ behavior: "smooth" });
+      });
+    });
+
+    // Modal functions for Internship Certificates
+    function openModal(imgSrc) {
+      document.getElementById('certImage').src = imgSrc;
+      document.getElementById('certModal').style.display = 'flex';
+    }
+    function closeModal() {
+      document.getElementById('certModal').style.display = 'none';
+    }
+  </script>
+
+</body>
+</html>
